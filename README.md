@@ -119,3 +119,6 @@ This Application build with MySQL, Node, Express, Handlebars and a homemade ORM 
      * Setup the `index.handlebars` to have the template that Handlebars can render onto.
 
      * Create a button in `index.handlebars` that will submit the user input into the database.
+
+
+![Deployed Application](public/assets/img/application.PNG)
