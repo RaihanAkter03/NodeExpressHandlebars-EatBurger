@@ -2,8 +2,6 @@
 var connection = require("../config/connection.js");
 
 
-
-
 var orm = {
     //  * `selectAll()`
     selectAll: function (table, cb) {
@@ -24,9 +22,10 @@ var orm = {
         })
     },
     //     * `updateOne()`
-    updateOne: function (table,id, cb) {
-        var queryString = "UPDATE "+ table +" SET devoured=true WHERE id=" + id +";";
-        connection.query(queryString, function (err, result) {
+    updateOne: function (table,colval,id,cb) {
+        var queryString = "UPDATE " + table + " SET devoured=true WHERE " + id + ";";
+        console.log(queryString);
+        connection.query(queryString,[id], function (err, result) {
 
             if (err) throw err;
 

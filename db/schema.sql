@@ -6,4 +6,3 @@ CREATE TABLE IF NOT EXISTS burgers (
     devoured BOOLEAN NOT NULL DEFAULT 0
 );
 
-SELECT * FROM burgers;
